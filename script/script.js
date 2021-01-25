@@ -27,7 +27,7 @@ function noOfPeople() {
 function tipCalculator() {
   document.getElementById("tipSpan").innerHTML = parseFloat(
     (billAmount() * tipPercent()) / noOfPeople()
-  );
+  ).toFixed(2);
 }
 
 function calculateTotal() {
