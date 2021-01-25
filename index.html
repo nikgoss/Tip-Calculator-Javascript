@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="header-row">
+      <h2>TIP CALCULATOR</h2>
+    </div>
+
+    <div class="content-row">
+      <form>
+        <p>How much was the total bill?</p>
+        <p>$<input id="totalBill" placeholder="Bill Amout" /></p>
+        <p>How was the service?</p>
+        <p>
+          <select id="selectQuality">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="0.3">-- Great : 30% --</option>
+            <option value="0.15">-- Good : 15% --</option>
+            <option value="0.05">-- Bad : 5% --</option>
+            <option value="0.00">-- Super Bad : 0% --</option>
+          </select>
+        </p>
+      </form>
+      <p>How many people are sharing the bill?</p>
+      <input id="peopleamt" placeholder="No. of people" /> people.
+      <div>
+        <button type="button" id="caculate" onclick="calculateTotal()">
+          calculate
+        </button>
+      </div>
+    </div>
+
+    <div class="calculate-row">
+      <p>Tip Per Person:</p>
+      <div id="totalTip">
+        <h1><sup>$</sup><span id="tipSpan">0.00</span></h1>
+      </div>
+    </div>
+    <div class="footer">
+      <p>created by Tashi Tsering Sherpa. GitHUB @nikgoss.</p>
+    </div>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>
